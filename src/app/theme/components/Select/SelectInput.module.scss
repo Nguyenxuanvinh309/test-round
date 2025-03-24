@@ -1,0 +1,43 @@
+.input {
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    // min-width: 260px;
+    font-size: 14px;
+    line-height: 20px;
+    height: auto;
+    border-color: var(--mantine-color-gray-5);
+
+    &::placeholder {
+        color: var(--mantine-color-gray-4);
+    }
+
+    &:focus {
+        border-color: var(--mantine-color-primary-3);
+    }
+
+    &:disabled {
+        background-color: var(--mantine-color-gray-1);
+    }
+
+    &[data-error='true'] {
+        border: 1px solid var(--mantine-color-red-3);
+    }
+}
+
+.option {
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    &[data-checked] {
+        color: var(--mantine-color-primary-8);
+        background-color: var(--mantine-color-blue-1);
+        font-weight: 500;
+
+        svg {
+            color: var(--mantine-color-primary-8);
+            width: 14px;
+            height: 14px;
+        }
+    }
+}

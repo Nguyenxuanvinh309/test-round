@@ -1,0 +1,27 @@
+.input {
+  width: 16.6px;
+  height: 16.6px;
+  border-radius: 2px;
+  border-color: var(--mantine-color-gray-6);
+  cursor: pointer;
+
+  &:checked,
+  &[data-indeterminate] {
+    background-color: var(--mantine-color-primary-8);
+    border-color: var(--mantine-color-primary-8);
+  }
+}
+
+.inner {
+  width: 16.6px;
+  height: 16.6px;
+}
+
+.body {
+  align-items: center;
+}
+
+.icon {
+  width: 12px;
+  height: 10px;
+}

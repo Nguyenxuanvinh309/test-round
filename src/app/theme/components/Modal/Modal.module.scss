@@ -1,0 +1,25 @@
+.root {
+  --modal-x-offset: 16px;
+}
+
+.header {
+  padding: 24px 24px 16px;
+
+  @media (max-width: 48em) {
+    padding: 16px 16px 8px;
+  }
+}
+
+.body {
+  padding: 0 24px;
+  min-width: 408px;
+
+  @media (max-width: 48em) {
+    padding: 0 16px;
+    min-width: calc(100vw - 38px);
+  }
+}
+
+.content {
+  border-radius: 8px;
+}
