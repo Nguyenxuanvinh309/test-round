@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useQuery, UseQueryOptions } from "@tanstack/react-query";
 import { useGetData } from "../configs/api"; // ✅ Ensure this is a FUNCTION, not a hook
 

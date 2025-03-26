@@ -1,4 +1,5 @@
-import { IPokemon } from "@/app/models/pokemons/type";
+
+import { IPokemon } from "@/app/containers/List/models/type";
 import { NextResponse } from "next/server";
 
 // Define Pokémon response type

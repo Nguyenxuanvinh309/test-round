@@ -1,3 +1,2 @@
 // //Parse server
-export const API_URL = process.env.VITE_REACT_APP_API_URL;
-
+export const API_URL = process.env.NEXT_PUBLIC_API_URL;

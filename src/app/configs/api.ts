@@ -1,9 +1,10 @@
 // src/api/axiosInstance.ts
 import { toast } from "react-toastify";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
+import { API_URL } from "@/utils/config";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000/api", // Change this to your API URL
+  baseURL: API_URL, // Change this to your API URL
   headers: {
     "Content-Type": "application/json",
   },
@@ -32,7 +33,7 @@ const handleRequest = async <TResponse>(
 };
 
 // CRUD Operations
-const useGetData = <TResponse>(url: string, config?: AxiosRequestConfig) => 
+const useGetData = <TResponse>(url: string, config?: AxiosRequestConfig) =>
   handleRequest<TResponse>(axiosInstance.get(url, config));
 
 const usePostData = <TRequest, TResponse>(url: string, payload: TRequest, config?: AxiosRequestConfig) =>

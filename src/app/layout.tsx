@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Problem 2",
-  description: "This is problem 2",
+  title: "Next page",
+  description: "This is next page",
 };
 
 
